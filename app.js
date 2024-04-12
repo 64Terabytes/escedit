@@ -3,8 +3,8 @@ const {
 	dialog,
 	ipcRenderer
 } = require('electron');
-const Export = require('../Export');
-window.isDurable = require('../lib/isDurable');
+const Export = require('./Export');
+window.isDurable = require('./lib/isDurable');
 window.currsav = null; // Current active save
 window.selectedTab = null; // Current tab selected
 window.newSav = null; // New save tree

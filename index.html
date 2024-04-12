@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>escedit</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
@@ -11,23 +12,26 @@
 	</script>
 	<!-- Script imports -->
 	<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="./elements/ItemDropdown.js"></script>
-	<script type="text/javascript" src="./elements/InmateCard.js"></script>
-	<script type="text/javascript" src="./elements/GuardCard.js"></script>
-	<script type="text/javascript" src="./elements/JobCard.js"></script>
-	<script type="text/javascript" src="./elements/Desk.js"></script>
+	<script type="text/javascript" src="/elements/ItemDropdown.js"></script>
+	<script type="text/javascript" src="/elements/InmateCard.js"></script>
+	<script type="text/javascript" src="/elements/GuardCard.js"></script>
+	<script type="text/javascript" src="/elements/JobCard.js"></script>
+	<script type="text/javascript" src="/elements/Desk.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 	<!-- /Script imports -->
 	<script>
 		if (window.module) module = window.module;
 	</script>
 </head>
+
 <body>
-	<center><h1 id="title">escedit</h1></center>
+	<center>
+		<h1 id="title">escedit</h1>
+	</center>
 	<center id="sec-start" class="sec">
 		<!-- Start section, where you select your save -->
 		<div id="save-list">
-			<h2>Select a save:</h2>
+			<h2>Drag save here</h2>
 			<p id="save-loading">(Loading saves...)</p>
 		</div>
 	</center>
@@ -43,24 +47,31 @@
 		<div id="player" class="select-tab">
 			<div id="stats-panel" class="panel" style="float:left">
 				<p>Dynamic Stats</p><br>
-				<span style="float:left">Cash</span> &nbsp; <input type="number" id="cash-box" class="stats-box"><br><br>
+				<span style="float:left">Cash</span> &nbsp; <input type="number" id="cash-box"
+					class="stats-box"><br><br>
 				<span style="float:left">HP</span> &nbsp; <input type="number" id="hp-box" class="stats-box"><br><br>
-				<span style="float:left">Heat</span> &nbsp; <input type="number" id="heat-box" class="stats-box"><br><br>
-				<span style="float:left">Fatigue</span> &nbsp; <input type="number" id="fat-box" class="stats-box"><br><br>
+				<span style="float:left">Heat</span> &nbsp; <input type="number" id="heat-box"
+					class="stats-box"><br><br>
+				<span style="float:left">Fatigue</span> &nbsp; <input type="number" id="fat-box"
+					class="stats-box"><br><br>
 			</div>
 			<div id="world-panel" class="panel">
 				<p>World</p><br>
 				<span style="float:left">Name</span> &nbsp; <input type="text" id="name-box" class="box"><br><br>
 				<span style="float:left">Day</span> &nbsp; <input type="number" id="day-box" class="box"><br><br>
 				<span style="float:left">Map</span> &nbsp; <input type="text" id="map-box" readonly class="box"><br><br>
-				<span style="float:left">Coords (x/y/z)</span> &nbsp; <input type="number" id="xcoord"><input type="number" id="ycoord"><input type="number" id="zcoord">
+				<span style="float:left">Coords (x/y/z)</span> &nbsp; <input type="number" id="xcoord"><input
+					type="number" id="ycoord"><input type="number" id="zcoord">
 			</div>
 			<div id="base-panel" class="panel" style="float:left">
 				<p>Base Stats</p><br>
-				<span style="float:left">Strength</span> &nbsp; <input type="number" id="str-box" class="stats-box"><br><br>
-				<span style="float:left">Speed</span> &nbsp; <input type="number" id="speed-box" class="stats-box"><br><br>
-				<span style="float:left">Intellect</span> &nbsp; <input type="number" id="int-box" class="stats-box"><br><br>
-			</div>	
+				<span style="float:left">Strength</span> &nbsp; <input type="number" id="str-box"
+					class="stats-box"><br><br>
+				<span style="float:left">Speed</span> &nbsp; <input type="number" id="speed-box"
+					class="stats-box"><br><br>
+				<span style="float:left">Intellect</span> &nbsp; <input type="number" id="int-box"
+					class="stats-box"><br><br>
+			</div>
 			<div id="inv-panel" class="panel" style="float:left;">
 				<p>Inventory</p><br>
 				<span style="float:left">#1</span> &nbsp; <span id="inven-dropdown-1"></span><br>
@@ -105,4 +116,5 @@
 		</center>
 	</center>
 </body>
+
 </html>
