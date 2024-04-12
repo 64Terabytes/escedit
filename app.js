@@ -1,8 +1,8 @@
-const {
-	remote,
-	dialog,
-	ipcRenderer
-} = require('electron');
+// const {
+// 	remote,
+// 	dialog,
+// 	ipcRenderer
+// } = require('electron');
 const Export = require('./Export');
 window.isDurable = require('./lib/isDurable');
 window.currsav = null; // Current active save
